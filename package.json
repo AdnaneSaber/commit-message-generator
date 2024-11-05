@@ -3,6 +3,7 @@
   "displayName": "commit-message-generator",
   "description": "Copies the diffs from the last commit for prompt generation",
   "version": "0.0.1",
+  "repository": {"url": "https://github.com/AdnaneSaber/commit-message-generator.git"},
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -14,12 +15,16 @@
   "contributes": {
     "commands": [
       {
-        "command": "commit-message-generator.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "diffCopier.copyLastCommitDiff",
         "title": "Copy Last Commit Diff for GPT"
+      },
+      {
+        "command": "diffCopier.gitCommitDefault",
+        "title": "Git Commit Default"
+      },
+      {
+        "command": "diffCopier.gitCommitCustom",
+        "title": "Git Commit Custom"
       }
     ]
   },
